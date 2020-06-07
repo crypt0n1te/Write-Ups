@@ -21,7 +21,8 @@ You should get a list that looks like this:
 3ajdUBIXVe
 4oAQnoJxEV
 8SzMNoIa3j
-9aaIBHbqls```
+9aaIBHbqls
+```
 
 The numbers that are being said, you will realise, are the same numbers as the ones at the start of each string above.
 So, take the first string and count 8 characters into the string. You get 'r'. 
