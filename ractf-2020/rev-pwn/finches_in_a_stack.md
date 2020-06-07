@@ -131,7 +131,7 @@ Obviously the most important functions are `flag` and `system`. Lets disassemble
 └           0x080491fc      c3             ret
 [0x080490c0]> 
 ```
-So we see that flag executes a system command, and we can assume its using '/bin/cat flag.txt` from before. So we'll need to return back to this function with a bof
+So we see that flag executes a system command, and we can assume its using `/bin/cat flag.txt` from before. So we'll need to return back to this function with a bof
 
 ## Overview
 
@@ -172,7 +172,7 @@ So we can see the canary in the eax register here:
 EAX: 0x35131100 
 EBX: 0x804c000 --> 0x804bf0c --> 0x1
 ```
-So the canary for this runthrough is `0x35131100``
+So the canary for this runthrough is `0x35131100`
 And fast forward to the second `printf` after `gets` which will print our leaked value:
 ```
 gdb-peda$ 
