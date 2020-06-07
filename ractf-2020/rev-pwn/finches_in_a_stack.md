@@ -40,7 +40,7 @@ sasha@kali:~/RACTF$
 
 Since our input is printed back to us, let's check for a format string vulnerability:
 ```
-sasha@kalivm:~/RACTF$ ./fias
+sasha@kali:~/RACTF$ ./fias
 No! You bad canary! Get back in your cage!
 
 I don't want you attacking anyone!
@@ -49,7 +49,7 @@ Hi! What's your name? %x.%x
 Nice to meet you, f7f7f2c0.3e8!
 Do YOU want to pet my canary?
 yes
-sasha@kalivm:~/RACTF$ 
+sasha@kali:~/RACTF$ 
 ```
 
 And here we see it is vulnerable to format strings, which is what we can use to leak the canary
@@ -70,9 +70,9 @@ sasha@kali:~/RACTF$
 And we can see an interesting string:
 > /bin/cat flag.txt
 
-Lets now see the functions in this file
+Lets now see the functions in this file:
 ```
-sasha@kalivm:~/RACTF$ r2 fias
+sasha@kali:~/RACTF$ r2 fias
 [0x080490c0]> aa
 [x] Analyze all flags starting with sym. and entry0 (aa)
 [0x080490c0]> afl
