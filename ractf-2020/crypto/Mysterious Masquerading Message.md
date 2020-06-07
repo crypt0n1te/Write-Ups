@@ -1,4 +1,4 @@
-#Mysterious Masquerading Message
+# Mysterious Masquerading Message
 
 So at the start open the file, and you see a chunk of base64 and some binary, but the file name is id_rsa which is quite misleading because the challenge is nothing to do with rsa, and that the private key isn't actually a private key.
 
