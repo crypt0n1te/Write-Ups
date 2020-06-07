@@ -20,7 +20,7 @@ Canary: This is a protection that places a random value before a return pointer,
 
 NX: This prevents us from executing our own shellcode by marking critical areas as non-executable
 
-ASLR: This will ranomize addresses such as libc ones, such as `system`. This won't affect us however
+ASLR: This will randomize addresses such as libc ones, such as `system`. This won't affect us however
 
 ## Basic Reversing
 
