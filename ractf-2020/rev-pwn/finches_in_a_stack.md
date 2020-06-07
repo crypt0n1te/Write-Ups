@@ -16,11 +16,11 @@ sasha@kali:~/RACTF$ pwn checksec fias
 
 So here's what we have to deal with:
 
-Canary: This is a protection that places a random value before a return pointer, so that if you overwrite it with an invalid value, the program crashes
+* Canary: This is a protection that places a random value before a return pointer, so that if you overwrite it with an invalid value, the program crashes
 
-NX: This prevents us from executing our own shellcode by marking critical areas as non-executable
+* NX: This prevents us from executing our own shellcode by marking critical areas as non-executable
 
-ASLR: This will randomize addresses such as libc ones, such as `system`. This won't affect us however
+* ASLR: This will randomize addresses such as libc ones, such as `system`. This won't affect us however
 
 ## Basic Reversing
 
