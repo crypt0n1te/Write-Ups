@@ -9,7 +9,7 @@ User-Agent: *
 Disallow: /admin-stash
 ```
 
-Go to the Disallow link and the flag is there
+Go to the `Disallow` link and the flag is there
 
 `http://95.216.233.106:15009/admin-stash`
 
