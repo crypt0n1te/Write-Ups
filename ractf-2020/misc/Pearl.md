@@ -25,7 +25,7 @@ ctf{pearlpearlpearl}
 
 The flag for this challenge was hidden in the new line characters
 
-I then extracted the new line characters using python
+I then extracted the new line characters using python and converted the binary characters to the flag
 
 ```
 import socket
@@ -41,22 +41,32 @@ totalData = ''
 while True:
     data = s.recv(100000)
     if len(data) > 0:
-        print(str(data).replace('ctf{pearlpearlpearl}',''))
+        totalData += str(data).replace('ctf{pearlpearlpearl}','').replace('pearl','')
     else:
         break
+
+Binary = ''
+count = 0
+for char in totalData:
+    if char == 'r':
+        Binary += '0'
+        count += 1
+    if char == 'n':
+        Binary += '1'
+        count += 1
+    if count == 8:
+        Binary += ' '
+        count = 0
+
+flag = Binary.split()
+
+for binary in flag:
+    print(chr(int(binary,2)), end='')
+
+print()
 s.close()
-```
 
 ```
-$ python3 pearl.py
-b'\r\n\n\n\r\r\n\r\r\n\n\r\r\r\r\n\r\n\n\r\r\r\n\n\r\n\n\n\r\n\r\r\r\n\n\r\r\n\n\r\r\n\n\n\n\r\n\n\r\n\n\n\r\r\r\r\r\r\n\n\r\r\n\n\r\r\n\n'
-b'\r\n\r\r\r\n\n\n\r\r\n\r\r\r\n\n\r\r\r\n\r\n\r\n\n\n\n\n\r\r\n\n\r\r\r\n\r\n\n\r\n\n\n\r\r\n\n\n\r\r\n\n\r\r\n\n\r\r\r\n\r\n\n\r\r\n\r\r\r\r\n\n\r\r\n\n\r\n\r\n\n\n\n\n\r\r\n\n\r\n\r\r\r\n\r\n\n\n\n\n\r\n\n\r\r\r\n\n\r\n\n\r\n\n\r\r\r\r\n\n\r\n\r\r\r\n\n\r\n\n\r\n\r\n\n\n\n\nctf{pearlpearlpear'
-b'l}\r\n'
-```
-
-I then copied and pasted all of the `\r`'s and `\n`'s into Cyber Chef replacing `\r` with 0 and `\n` with 1
-
-Then just decode the binary to retrieve the flag
 
 ractf{p34r1_1ns1d3_4_cl4m}
 
