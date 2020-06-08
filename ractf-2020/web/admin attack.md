@@ -5,7 +5,7 @@ So based on previous challlenges we know that the RARO site is prone to SQL inje
 Upon testing i found that the combination `'OR 1=1;--` gave me access to an account, just not the admin account. Which means we needed to find a way to get access to the `jimmyTehAdmin` account we found in the previous challenge.
 
 ### Limit Cause
-In SQLwe can use the Limit Clause to select a specific item, it is defined by GeeksforGeeks as the following:
+In SQL we can use the Limit Clause to select a specific item, it is defined by GeeksforGeeks as the following:
 
 `The LIMIT clause is used to set an upper limit on the number of tuples returned by SQL.`
 
