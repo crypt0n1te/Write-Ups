@@ -22,7 +22,7 @@ So now we know the method we will need to use, we can mess around with that unti
 
 We know we will need to add the limit and offset somewhere in that statement.
 
-`'OR 1=1 LIMIT 1 OFFSET 0;--`
+`'OR 1=1 LIMIT 1 OFFSET 1;--`
 
 When we try the above example, we succcessfully login and are greeted by the flag like so:
 ```
