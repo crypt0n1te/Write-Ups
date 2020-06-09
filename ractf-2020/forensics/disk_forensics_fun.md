@@ -16,11 +16,12 @@ TRACK2.M4A
 TRACK.M4A
 NOTHINGH.asc
 ```
+
 The .asc file seems interesting so i extract it to my Desktop to further analyse.
 
 Looking at the file i see that it is a PGP message, as it says at the top of the file here:
 
-````
+```
 -----BEGIN PGP MESSAGE-----
 ```
 
