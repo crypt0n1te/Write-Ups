@@ -21,8 +21,6 @@ So here's what we have to deal with:
 
 * NX: This prevents us from executing our own shellcode by marking critical areas as non-executable
 
-* ASLR: This will randomize addresses such as libc ones, such as system. This won't affect us however
-
 And a new one:
 
 * PIE: This essentially randomizes the addresses of the functions and gadgets, making returning to functions harder
