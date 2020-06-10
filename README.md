@@ -1,3 +1,3 @@
-# write-ups
+# Write-Ups
 
-Welcome to crypt0nite's writeups. Well, enjoy. 
+Welcome to crypt0nite's write-ups. Well, enjoy. 
