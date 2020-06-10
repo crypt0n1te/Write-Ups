@@ -20,8 +20,6 @@ So here's what we have to deal with:
 
 * NX: This prevents us from executing our own shellcode by marking critical areas as non-executable
 
-* ASLR: This will randomize addresses such as libc ones, such as `system`. This won't affect us however
-
 ## Basic Reversing
 
 Running the file shows us that the file takes user input twice, and the first input is printed back to the screen:
