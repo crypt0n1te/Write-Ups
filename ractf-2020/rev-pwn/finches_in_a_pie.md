@@ -3,7 +3,7 @@
 This challenge is very similiar to Finches in a Stack, so this one is more like a continuation of that writeup, so I'd advise reading that one first before reading this one. Here's the link:
 [Finches in a Stack](https://github.com/crypt0n1te/write-ups/blob/master/ractf-2020/rev-pwn/finches_in_a_stack.md)
 
-Protections:
+## Protections
 First, let's check the protections that this binary has using checksec:
 ```
 sasha@kali:~/RACTF$ pwn checksec fiap
