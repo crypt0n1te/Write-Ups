@@ -1,4 +1,6 @@
-the link https://youtu.be/zi3pLOaUUXs takes you to a video of someone saying numbers and lots of barcodes flashing.
+# BR.MOV
+
+The link https://youtu.be/zi3pLOaUUXs takes you to a video of someone saying numbers and lots of barcodes flashing.
 Put this on playback speed x0.25, and scan each barcode, pausing when necessary.
 
 You should get a list that looks like this:
