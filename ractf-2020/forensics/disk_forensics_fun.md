@@ -1,11 +1,11 @@
 # Disk Forensics fun
 
 ## First Steps:
-We are told this a disk forensics challenge, which means the first steps are to open an Autopsy case, I won't cover the specifics of this but if you are unfamiliar with Autopsy i reccomend you check out the following:
+We are told this a disk forensics challenge, which means the first steps are to open an Autopsy case, I won't cover the specifics of this but if you are unfamiliar with Autopsy i recommend you check out the following:
 https://sleuthkit.org/autopsy/docs/user-docs/4.0/quick_start_guide.html
 
 ### Looking for the files:
-So the first steps are to start looking for interesting files. I always start by looking at if the Ingest Modules return anything, in this case, nothing of use. So I begin manually analysing the files, this is what forensics is all about :mag:
+So the first steps are to start looking for interesting files. I always start by looking at whether the Ingest Modules return anything, in this case, nothing of use. So I begin manually analysing the files, this is what forensics is all about :mag:
 
 The other thing I notice is that a lot of the files are empty, which seems strange to me so I begin to dig deeper :pick:.
 
@@ -17,7 +17,7 @@ TRACK.M4A
 NOTHINGH.asc
 ```
 
-The .asc file seems interesting so i extract it to my Desktop to further analyse.
+The .asc file seems interesting so i extract it to my Desktop for further analysis.
 
 Looking at the file i see that it is a PGP message, as it says at the top of the file here:
 
@@ -32,13 +32,13 @@ This explains to me that a PGP file is the following:
 
 **Security key or digital signature file that verifies a user's identity; used for decrypting a file encrypted with Pretty Good Privacy (PGP) software; ensures that protected files can only be opened by authorized users.**
 
-So i begin to look for these keys, a quick keyword search for `pgp` gives me these 2 files, in the `ROOT` Directory:
+So I begin to look for these keys, a quick keyword search for `pgp` gives me these 2 files, in the `ROOT` Directory:
 ```
 PRIVATE.PGP
 PUBLIC.PGP
 ```
 
-So i extract these files  to my desktop also, it seems we have a lead.
+I also extract these files to my desktop; it seems we have a lead.
 
 ### Decrypting the file using the keys:
 So upon further research i find that Linux has a gpg command, the man page for which is here:

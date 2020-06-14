@@ -265,3 +265,5 @@ ractf{St4ck_C4n4ry_FuN!}
 sasha@kali:~/RACTF$
 ```
 Challenge done!
+
+**ractf{St4ck_C4n4ry_FuN!}**

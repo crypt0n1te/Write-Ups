@@ -27,7 +27,7 @@ The flag for this challenge was hidden in the new line characters
 
 I then extracted the new line characters using python and converted the binary characters to the flag
 
-```
+```python
 import socket
 
 hostname = '95.216.233.106'
@@ -65,9 +65,6 @@ for binary in flag:
 
 print()
 s.close()
-
 ```
 
-ractf{p34r1_1ns1d3_4_cl4m}
-
-
+**ractf{p34r1_1ns1d3_4_cl4m}**

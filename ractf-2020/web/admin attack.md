@@ -1,8 +1,8 @@
 # Admin Attack
 
-So based on previous challlenges we know that the RARO site is prone to SQL injection. So a good start is to test with some form of `OR 1=1`. So i began to test with the basic combinations you are likely to find.
+Since from previous challlenges we know that the RARO site is prone to SQL injection, a good start would be to test with some form of `OR 1=1`, so I began to test with the basic combinations you are likely to find.
 
-Upon testing i found that the combination `'OR 1=1;--` gave me access to an account, just not the admin account. Which means we needed to find a way to get access to the `jimmyTehAdmin` account we found in the previous challenge.
+Upon testing I found that the combination `'OR 1=1;--` gave me access to an account, just not the admin account; this meant we needed to find a way to get access to the `jimmyTehAdmin` account we found in the previous challenge.
 
 ### Limit Cause
 In SQL we can use the Limit Clause to select a specific item, it is defined by GeeksforGeeks as the following:
@@ -14,7 +14,7 @@ If you carry on reading you will see that it outlines the following:
 **LIMIT x OFFSET y simply means skip the first y entries and then return the next x entries.
 OFFSET can only be used with ORDER BY clause. It cannot be used on its own.**
 
-So for our purposes we can use a combination of LIMIT and OFFSET to find the account we want, which is `jimmyTehAdmin` so i messed around with these values a little bit and before long, i found the correct combination.
+So for our purposes we can use a combination of LIMIT and OFFSET to find the account we want, which is `jimmyTehAdmin`, so I messed around with these values a little bit and, before long, I found the correct combination.
 
 ### Final Steps
 
@@ -24,10 +24,12 @@ We know we will need to add the limit and offset somewhere in that statement.
 
 `'OR 1=1 LIMIT 1 OFFSET 1;--`
 
-When we try the above example, we succcessfully login and are greeted by the flag like so:
+When we try the above example, we successfully login and are greeted by the flag like so:
 ```
 Welcome, jimmyTehAdmin
 ractf{!!!4dm1n4buse!!!}
 ```
+
+**ractf{!!!4dm1n4buse!!!}**
 
 > Created by Christopher Harris (cjharris18) on the 8th June 2020.

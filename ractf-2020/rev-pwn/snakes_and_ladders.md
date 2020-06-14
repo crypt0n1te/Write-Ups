@@ -2,7 +2,7 @@
 
 For this I wrote a decrypt function to reverse wha the encrypted function did.
 
-```
+```python
 encrypted_flag = "fqtbjfub4uj_0_d00151a52523e510f3e50521814141c"
 
 def sxor(s1,s2):
@@ -24,4 +24,4 @@ def decrypt(a):
 decrypt(encrypted_flag)
 ```
 
-ractf{n3v3r_g0nn4_g1v3_y0u_up}
+**ractf{n3v3r_g0nn4_g1v3_y0u_up}**

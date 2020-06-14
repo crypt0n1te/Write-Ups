@@ -10,21 +10,21 @@ The flag was in fact hidden in the indentations and spaces as binary
 
 ### I then wrote a python script to extract all of the codes and create the flag
 
-```
+```python
 File = open("main.c","r").readlines() # Open the file
 
 strippedFile = []
 
 for line in File:
     newline = line.strip()
-    if newline != '':
+    if newline != "":
         strippedFile.append(line)
 
 strippedFile = "".join(strippedFile)
 
 # This removes all the lines which are only newlines
 
-binary=""
+binary = ""
 
 for char in strippedFile:
     if char == "\t": # Tabs are 1's
@@ -37,12 +37,12 @@ for char in strippedFile:
 flag = binary.split() # Separate the binary into an array
 
 for binary in flag:
-    print(chr(int(binary,2)), end='') # Convert each binary number to decimal and then to its ascii form
+    print(chr(int(binary,2)), end="") # Convert each binary number to decimal and then to its ascii form
 
 print()
 ```
 
 ```
 $ python3 extract.py 
-ract{R34d1ngBetw33nChar4ct3r5}
+ractf{R34d1ngBetw33nChar4ct3r5}
 ```

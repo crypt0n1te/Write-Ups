@@ -4,7 +4,8 @@ The link https://youtu.be/zi3pLOaUUXs takes you to a video of someone saying num
 Put this on playback speed x0.25, and scan each barcode, pausing when necessary.
 
 You should get a list that looks like this:
-```5WlndrAehA
+```
+5WlndrAehA
 8PdGSTvnaY
 9zuPGubRMc
 7cyqggztfa

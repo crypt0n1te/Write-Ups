@@ -6,7 +6,7 @@ Upon a small bit of research, I find there is a python module called mido that l
 
 **Mido is a library for working with MIDI messages and ports. It's designed to be as straight forward and Pythonic as possible:**
 
-The github for mido describes it as the following above message. So I decide to try this by using `pip install mido` and then i begin to code a solution.
+The github for mido describes it as the above message. So I decide to try this by using `pip install mido` and then began to code a solution.
 
 **NOTE:** The following is python3, so be sure to run it with `python3 file.py` or instead with the shebang shown below. However, remember to chmod the file to be able to run it as so: `./file.py`.
 
@@ -223,5 +223,3 @@ ractf{f50c13ty_l3vel_5t3g!}
 And so we have the challenge solved!
 
 > Created on the 9th June by Christopher Harris (@cjharris18)
-
-Decode the values produced from this code from decimal to ascii
