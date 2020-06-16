@@ -1,6 +1,6 @@
 # Homecooked
 
-So first we see that running the program slowly decrypts the string to yield a flag - but it's simply not fast enough. It never ends - we can check by putting a `print()` statement at the end. So, we'll have to somehow make it go faster - and to do this we need t owork out what the functions do.
+So first we see that running the program slowly decrypts the string to yield a flag - but it's simply not fast enough. It never ends - we can check by putting a `print()` statement at the end. So, we'll have to somehow make it go faster - and to do this we need to work out what the functions do.
 
 The `b()` function looks like this:
 
