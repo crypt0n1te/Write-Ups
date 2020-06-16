@@ -17,7 +17,7 @@ Login as any random "user", notice that a new cookie is made with an odd value. 
 Simply rot13 the string "admin" and pass it in as the new value for the user cookie.
 
 # Easy Keesy
-Running `file` shows that it is a KeePass file, running `keepass2john [file] > [new_file]` then `john --wordlist=rockyou.txt [new_file]` cracks it to give te=ge password `monkeys`.
+Running `file` shows that it is a KeePass file, running `keepass2john [file] > [new_file]` then `john --wordlist=rockyou.txt [new_file]` cracks it to give the password `monkeys`.
 
 Then install keepass2 (sudo apt install keepass2) and open the original file using that, decrypting with the password `monkeys`.
 
