@@ -1,5 +1,5 @@
 # Docxor
-We used [this tool](https://wiremask.eu/tools/xor-cracker/) to guess the key, setting the keylength to 4.
+We used [this tool](https://wiremask.eu/tools/xor-cracker/) to guess the key, setting the keylength to 4 as this was said in the briefing. 
 
 We then used cyberchef to XOR the file with the key `5a 41 99 bb`
 
