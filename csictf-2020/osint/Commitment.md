@@ -18,4 +18,4 @@ Scrolling through these, you will find the flag in `index.js`, which was deleted
 The contents of index.js are as follows: 
 ``` 
 API_KEY = randomapi
-FLAG = csictf{sc4r3d_0f_c0mm1tm3nt} ```
+FLAG = csictf{sc4r3d_0f_c0mm1tm3nt}
