@@ -14,11 +14,9 @@ Googling `M4 UKW` we find out this is a type of enigma. M4 means there are 4 rot
 are position and ring values respectively and the string of letters at the end are the plugboard values. 
 
 This leaves us with almost everything needed to decrypt the ciphertext. However we are not given the values for rotor 2,3 and 4. They can be in any position 
-from the range I to VIII, so bruteforcing this we get the values as follows:
-rotor 2 = I
-
-rotor 3 = IV
-
+from the range I to VIII, so bruteforcing this we get the values as follows:  
+rotor 2 = I  
+rotor 3 = IV  
 rotor 4 = VII
 
 Using [this website](https://cryptii.com/pipes/enigma-decoder), we get the flag:
