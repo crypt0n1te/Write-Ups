@@ -1,3 +1,3 @@
 # Write-Ups
 
-Welcome to crypt0nite's write-ups. Well, enjoy. 
+Here you will find crypt0nite's writeups for various ctfs we partake in. 
