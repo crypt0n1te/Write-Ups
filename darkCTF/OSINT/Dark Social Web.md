@@ -1,4 +1,4 @@
-## Briefing:  
+## Briefing:  
 
 ```
 0xDarkArmy has 1 social account and DarkArmy uses the same name everywhere. Hint: The front page of internet
