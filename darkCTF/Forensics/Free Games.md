@@ -1,5 +1,6 @@
 ## Briefing: 
-``` Wolfie getting free games from somewhere. Find the full url to that game. Note: Use the same file provided in Wolfie's Contacts Flag Format: darkCTF{http://site} ```
+``` Wolfie getting free games from somewhere. Find the full url to that game. Note: Use the same file provided in Wolfie's Contacts Flag Format: darkCTF{http://site} ```  
+[file](https://mega.nz/file/rs9XCCyK#MuQcqPYUJ1mQtJZhRQInuwvBS7wazVm2DyMgp-edAgg)
 
 Using the same file from Wolfie's contacts, I searched for the string `http://` in autopsy.   
 
