@@ -1,5 +1,7 @@
 ## Briefing:
-```Wolfie is doing some illegal work with his friends find his contacts.```
+```Wolfie is doing some illegal work with his friends find his contacts.```  
+[File](https://mega.nz/file/rs9XCCyK#MuQcqPYUJ1mQtJZhRQInuwvBS7wazVm2DyMgp-edAgg)
+
 
 - Opening the file in autopsy, we can see some emails.  
 In the headings of some, you could see parts of the flag. 
